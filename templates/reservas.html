@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Registrar Reserva{% endblock %}
+
+{% block content %}
+<h2>Registrar Reserva</h2>
+<form method="POST">
+    <label for="UsuarioID">ID de Usuario:</label>
+    <input type="number" id="UsuarioID" name="UsuarioID" required>
+
+    <label for="FechaReserva">Fecha:</label>
+    <input type="date" id="FechaReserva" name="FechaReserva" required>
+
+    <label for="HoraReserva">Hora:</label>
+    <input type="time" id="HoraReserva" name="HoraReserva" required>
+
+    <label for="NumeroPersonas">Número de Personas:</label>
+    <input type="number" id="NumeroPersonas" name="NumeroPersonas" required>
+
+    <button type="submit">Registrar Reserva</button>
+</form>
+{% endblock %}
